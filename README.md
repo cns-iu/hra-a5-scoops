@@ -19,3 +19,7 @@
 # 4. Deactivate when done
 
 `deactivate`
+
+# 5. Run all scripts:
+
+`python run_all.py`
