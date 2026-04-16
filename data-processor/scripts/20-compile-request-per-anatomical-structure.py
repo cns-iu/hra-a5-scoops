@@ -33,7 +33,7 @@ def get_distribution(df: pd.DataFrame, as_label: str):
 
     # Replace others with 'OTHER'
     filtered_df["cell_label"] = filtered_df["cell_label"].where(
-        filtered_df["cell_percentage"].isin(top_cell_types), "OTHER"
+        filtered_df["cell_percentage"].isin(top_cell_types), "Other"
     )
     print(filtered_df)
 
@@ -53,7 +53,7 @@ def get_distribution(df: pd.DataFrame, as_label: str):
 
 
 def make_3d_mesh_request(file_subpath: str, num_nodes, distribution):
-    output_file = f"output/{file_subpath}.json"
+    output_file = f"../output/{file_subpath}.json"
 
     os.makedirs(os.path.dirname(output_file), exist_ok=True)
 
