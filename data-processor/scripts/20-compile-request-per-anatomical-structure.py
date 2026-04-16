@@ -53,7 +53,7 @@ def get_distribution(df: pd.DataFrame, as_label: str):
 
 
 def make_3d_mesh_request(file_subpath: str, num_nodes, distribution):
-    output_file = f"../output/{file_subpath}.json"
+    output_file = f"../output/{file_subpath}.csv"
 
     os.makedirs(os.path.dirname(output_file), exist_ok=True)
 
